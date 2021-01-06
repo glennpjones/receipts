@@ -73,11 +73,11 @@ module Receipts
           text_box bill_to, at: [0, cursor], width: 200, height: 150, inline_format: true, size: 12, leading: 4, overflow: :shrink_to_fit
         end
 
-        bounding_box([265, top], width: 100) do
+        bounding_box([245, top], width: 100) do
           text ["Factuur", "Factuurdatum", "Status"].join("\n"), size: 12, leading: 4
         end
 
-        bounding_box([360, top], width: 100) do
+        bounding_box([340, top], width: 120) do
           text [(subheading % {id: id}), issue_date.to_s, status].join("\n"), size: 12, leading: 4, inline_format: true
         end
       end
